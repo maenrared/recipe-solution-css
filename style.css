@@ -73,6 +73,7 @@ td{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
 /* For Laptops and Large Tablets (991px and below) */
 @media screen and (max-width: 991px) {
     #container {
