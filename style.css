@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +6,8 @@
 
 body{background-color: hsl(30, 54%, 90%);
     color:hsl(24, 5%, 18%);
-    font-family:"Outfit",serif;font-size: 16px;}
+    font-family:"Outfit",serif;
+    font-size: 16px;}
 
 #container{
     width: 45%;
@@ -25,7 +25,7 @@ img {width: 100%;
 
 #omelette-heading{
     margin-block: 20px/*,top-bottom,margin-inline,left-right*/;
-    font: size 2rem;
+    font-size: 2rem;
     color:hsl(24, 5%, 18%);}
 
 .about{
@@ -73,3 +73,43 @@ td{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+/* For Laptops and Large Tablets (991px and below) */
+@media screen and (max-width: 991px) {
+    #container {
+        width: 60%;
+        padding: 35px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* For Tablets (767px and below) */
+@media screen and (max-width: 767px) {
+    #container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    #container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #omelette-heading {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
